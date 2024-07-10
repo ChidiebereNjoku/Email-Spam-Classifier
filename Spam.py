@@ -1,5 +1,5 @@
-# streamlit_app.py
-
+# Download 'punkt' if not already downloaded
+nltk.download('punkt')
 import streamlit as st
 import joblib
 import re
