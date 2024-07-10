@@ -1,5 +1,3 @@
-# Download 'punkt' if not already downloaded
-nltk.download('punkt')
 import streamlit as st
 import joblib
 import re
@@ -10,6 +8,10 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 # Preprocessing functions
 def remove_special_chars(text):
